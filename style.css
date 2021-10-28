@@ -35,10 +35,24 @@ label {
   font-weight: 600;
   text-transform: uppercase;
 }
+.card-body input::placeholder {
+  font-size: 16px;
+  color: #b94545;
+  font-weight: 600;
+}
 .card-body input {
   width: 95%;
   background-color: #ec7c7c;
+  font-size: 16px;
+  color: #1b0101;
+  font-weight: 600;
   margin-right: 10px;
+  padding-left: 16px;
+}
+.card-body input:focus,
+.card-body input:active {
+  outline: none;
+  background-color: #f09f9f;
 }
 button {
   display: inline-block;
@@ -76,11 +90,23 @@ button:hover span:after {
   right: 0;
 }
 .output {
+  margin-top: 10px;
   left: 50%;
+  padding: 2px;
+  font-size: 18px;
+  color: #1b0101;
 }
 .card-ans {
   margin-top: 20px;
   font-size: 24px;
   color: #1b0101;
   margin-bottom: 25px;
+}
+.card-footer {
+  padding: 10px;
+  font-size: 16px;
+  color: #701f1f;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: #ffebeb;
 }

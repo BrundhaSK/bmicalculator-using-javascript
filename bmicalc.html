@@ -21,7 +21,7 @@
         <div class="card text-center">
           <div class="card-header">BMI Calculator</div>
           <div class="card-body">
-            <h5 class="card-title">Enter details to find your BMI Value..</h5>
+            <h5 class="card-title">Enter details to find your BMI Value...</h5>
             <div class="mb-3 row">
               <label for="weight" class="col-sm-2 col-form-label">Weight</label>
               <div class="col-sm-10">
@@ -29,27 +29,31 @@
                   type="number"
                   class="form-control-plaintext"
                   id="weight"
+                  placeholder="Enter weight in Kg"
+                  required
                 />
               </div>
             </div>
             <div class="mb-3 row">
-              <label for="weight" class="col-sm-2 col-form-label">Height</label>
+              <label for="height" class="col-sm-2 col-form-label">Height</label>
               <div class="col-sm-10">
                 <input
                   type="number"
                   class="form-control-plaintext"
                   id="height"
+                  placeholder="Enter height in feet"
+                  required
                 />
               </div>
             </div>
-            <button>
+            <button id="calculate" onclick="calculatebmi()">
               <span>Calculate</span>
             </button>
             <div class="output text-center">
-              <h5 class="card-ans">Output</h5>
+              <h5 id="card-ans"></h5>
             </div>
           </div>
-          <div class="card-footer text-muted">
+          <div class="card-footer">
             Between 18.5 and 24.9 – you're in the healthy weight range
           </div>
         </div>
